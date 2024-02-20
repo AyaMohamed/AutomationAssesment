@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+
 public class BahrainSubscriptionPackagesTests extends BaseTests {
 
     public BahrainSubscriptionPage bahrainSubscriptionPage;
@@ -19,9 +20,9 @@ public class BahrainSubscriptionPackagesTests extends BaseTests {
         String classicPlan = bahrainSubscriptionPage.getClassicPlanType();
         String litePlan = bahrainSubscriptionPage.getLitePlanType();
         String premiumPlan = bahrainSubscriptionPage.getPremiumPlanType();
-        Assert.assertEquals(classicPlan, "CLASSICS");
-        Assert.assertEquals(litePlan, "Lite");
-        Assert.assertEquals(premiumPlan, "Premium");
+        Assert.assertEquals(classicPlan, "CLASSIC");
+        Assert.assertEquals(litePlan, "LITE");
+        Assert.assertEquals(premiumPlan, "PREMIUM");
     }
 
     @Test(priority = 2)
