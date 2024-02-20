@@ -12,21 +12,14 @@ public class SubscriptionPageObjects {
     private By saudiCountryLink =By.id("sa");
 
     private By litePlanType=By.id("name-lite");
-    private By currencyAndPriceLite=By.id("currency-lite");
-    //get price & currency using getText method
-    //split the text to get currency & price separated
-
+    private By currencyLite=By.xpath("//div[@id='currency-lite']/i");
+    private By priceLite=By.xpath("//div[@id='currency-lite']/b");
     private By classicPlanType=By.id("name-classic");
-    private By currencyAndPriceClassic=By.id("currency-classic");
-
+    private By currencyClassic=By.xpath("//div[@id='currency-classic']/i");
+    private By priceClassic=By.xpath("//div[@id='currency-classic']/b");
     private By premiumPlanType=By.id("name-premium");
-    private By currencyAndPricePremium=By.id("currency-premium");
-
-    public By getPlanNamesList() {
-        return planNamesList;
-    }
-
-    private By planNamesList=By.xpath("(//div[@class='plan-names'])[1]");
+    private By currencyPremium=By.xpath("//div[@id='currency-premium']/i");
+    private By pricePremium=By.xpath("//div[@id='currency-premium']/b");
 
     public By getCountryBtn() {
         return countryBtn;
@@ -52,23 +45,37 @@ public class SubscriptionPageObjects {
         return litePlanType;
     }
 
-    public By getCurrencyAndPriceLite() {
-        return currencyAndPriceLite;
-    }
 
     public By getClassicPlanType() {
         return classicPlanType;
     }
 
-    public By getCurrencyAndPriceClassic() {
-        return currencyAndPriceClassic;
-    }
 
     public By getPremiumPlanType() {
         return premiumPlanType;
     }
 
-    public By getCurrencyAndPricePremium() {
-        return currencyAndPricePremium;
+    public By getCurrencyLite() {
+        return currencyLite;
+    }
+
+    public By getPriceLite() {
+        return priceLite;
+    }
+
+    public By getCurrencyClassic() {
+        return currencyClassic;
+    }
+
+    public By getPriceClassic() {
+        return priceClassic;
+    }
+
+    public By getCurrencyPremium() {
+        return currencyPremium;
+    }
+
+    public By getPricePremium() {
+        return pricePremium;
     }
 }
