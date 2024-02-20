@@ -27,7 +27,7 @@ public class SubscriptionHomePage {
 
     public KuwaitSubscriptionPage goToKuwaitSubscription() {
         clickOnCountryBtn();
-        driver.findElement(objects.getBahrainCountryLink()).click();
+        driver.findElement(objects.getKuwaitCountryLink()).click();
         return new KuwaitSubscriptionPage(driver);
     }
 
